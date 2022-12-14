@@ -3,27 +3,27 @@
       {
         "id": "1",
         "name": "Total",
-        "poster": "Total.PNG"
+        "image": "Total.PNG"
       },
       {
         "id": "2",
         "name": "Shell",
-        "poster": "Shell.PNG"
+        "image": "Shell.PNG"
       },
       {
         "id": "3",
         "name": "Rubis",
-        "poster": "Rbis.PNG"
+        "image": "Rubis.PNG"
       },
       {
         "id": "4",
         "name": "Ola",
-        "poster": "Ola.PNG"
+        "image": "Ola.PNG"
       },
       {
         "id": "5",
         "name": "National Oil",
-        "poster": "Nationa Oil.PNG"
+        "image": "Nationa Oil.PNG"
       }
     ]
   }
