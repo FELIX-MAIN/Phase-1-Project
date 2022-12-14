@@ -1,0 +1,29 @@
+{
+    "Stations": [
+      {
+        "id": "1",
+        "name": "Total",
+        "poster": "blackadam.jpeg"
+      },
+      {
+        "id": "2",
+        "name": "Shell",
+        "poster": "librarians.jpeg"
+      },
+      {
+        "id": "3",
+        "name": "Rubis",
+        "poster": "Troll.jpeg"
+      },
+      {
+        "id": "4",
+        "name": "Ola",
+        "poster": "Smile.jpeg"
+      },
+      {
+        "id": "5",
+        "name": "National Oil",
+        "poster": "She Said.jpeg"
+      }
+    ]
+  }
