@@ -3,27 +3,32 @@
       {
         "id": "1",
         "name": "Total",
-        "image": "Total.PNG"
+        "image": "Images/Total.PNG",
+        "purchase": 0
       },
       {
         "id": "2",
         "name": "Shell",
-        "image": "Shell.PNG"
+        "image": "Images/Shell.PNG",
+        "purchase":0
       },
       {
         "id": "3",
         "name": "Rubis",
-        "image": "Rubis.PNG"
+        "image": "Images/Rubis.PNG",
+        "purchase":0
       },
       {
         "id": "4",
         "name": "Ola",
-        "image": "Ola.PNG"
+        "image": "Images/Ola.PNG",
+        "purchase":0
       },
       {
         "id": "5",
         "name": "National Oil",
-        "image": "Nationa Oil.PNG"
+        "image": "Images/National Oil.PNG",
+        "purchase":0
       }
     ]
   }
