@@ -1,32 +1,54 @@
- function renderonestation(station){
-    //build station
-    let card = document.createElement('li')
-    card.className = 'card'
-    card.innerHTML = `
-        <img src="${station.image}">
-        <div class="content"
-            <h3>${station.name}</h3>
-            <p>
-                $<span class="purchase-count">${station.purchase}</span> Purchased
-            </p>
-        </div>
-        <div class="buttons">
-            <button> Book </button>
-            <button> Revert </button>
-        </div>
-    `
+const character = document.getElementById('station-bar');
+const stationName = document.getElementById('name');
+const image = document.getElementById('image');
+const form = document.getElementById('fuel-form');
+const litre_count = document.getElementById('litre-count');
+const input = document.getElementById('amount');
+const reset = document.getElementById('reset-btn');
 
-    //add station to DOM
-    document.querySelector('#station-list').appendChild(card)
- }
+let currentStation;
+reset.style.cursor = 'pointer';
 
- function getallstations(){
-    fetch(' http://localhost:3000/Stations')
-    .then(res => res.json())
-    .then(Stations => Stations.forEach(station => renderonestation(station)))
- }
 
- function initialize(){
-    getallstations()
- }
- initialize()
+function getStations () {
+  fetch('http://localhost:3000/Stations/')
+    .then(response => response.json())
+    .then(renderStations);
+}
+
+function renderStations (stations) {
+  stations.forEach(renderCharacters);
+}
+
+
+function renderCharacters (station) {
+  const spanEle = document.createElement('span');
+  spanEle.innerHTML = station.name;
+  spanEle.style.cursor = 'pointer';
+  character.appendChild(spanEle);
+  spanEle.addEventListener('click', () => {
+    currentStation = station;
+    showStation(station);
+  });
+}
+
+
+function showStation (station) {
+  stationName.innerHTML = station.name;
+  image.src = station.image;
+  litre_count.innerHTML = station.purchase;
+}
+getStations();
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  currentStation.purchase += parseInt(e.target.purchase.value);
+  showAnimal(currentStation);
+  form.reset();
+});
+
+reset.addEventListener('click', () => {
+  currentStation.purchase = 0;
+  showStation(currentStation);
+});
+
