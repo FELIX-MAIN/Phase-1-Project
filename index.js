@@ -52,3 +52,12 @@ reset.addEventListener('click', () => {
   showStation(currentStation);
 });
 
+//checkout
+function calculate(){
+    $(".checkout").on("keyup", ".quantity", 
+function(){
+        var price = +$(".price").data("price");
+        var quantity = +$(this).val();
+        $("#total").text("Ksh" + price * quantity);
+    })
+}
