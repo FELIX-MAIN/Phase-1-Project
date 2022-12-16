@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-     <title>PROJECT</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<section class="header">
-		<div>
-			<h1>FUEL DELIVERY SYSTEM</h1>
-			<p>For the satisfaction of our customers. WELCOME!!</p>
-			<a href="" class="hero-btn">Visit Us To Know More</a>
-		</div>
-	</section>
+  <head>
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Fuel Delivery System</h1>
+    </div>
 
-<!----- FUEL ----->
+    <div id="station-bar">
+      
+    </div>
 
-<section class="FUEL">
-	<h1>FUEL OFFERED</h1>
-	<p>We offer the fuel that is in high demand and that is widely used in the country.</p>
+    <div class="stationInfo">
+      <div id="detailed-info">
+        <p id="name">Station Name</p>
+        <img
+          id="image"
+          alt="Station Name"
+        />
 
-	<div class="row">
-		<div class="FUEL-col">
-			<h3>Unleaded Premium Super</h3>
-			<p>Super petrol also known as Premium Motor Gasoline or Premium Motor Spirit(PMS) or petrol is used as fuel in internal combustion engines.</p> 
-		</div>
-		<div class="FUEL-col">
-			<h3>Low Sulphur Diesel</h3>
-			<p>Diesel(Automotive Gas Oil-AGO) is fuel used in any diesel engine.</p>
-		</div>
-		<div class="FUEL-col">
-			<h3>Kerosene</h3>
-			<p>Illuminating Kerosene(paraffin) is a combustible liquid commonly used as heating fuel and domestically for cooking and lighting.</p>
-		</div>
-		<div class="FUEL-col">
-			<h3>Industrial Diesel Oil</h3>
-			<p>Industrial Diesel oil (IDO) is a blend of diesel and heavy fuel oil and is mainly used for heating, generating power and water/steam boilers in small industrial and hospitality and applications.</p>
-		</div>
-</section>
-
-<!---- FUEL STATIONS ---->
-
-<ul id="station-list" class="cards">
-	
-</ul>
-
-<!-- Price Generator-->
-
-<div class="checkout">
-	<h1 class="title">Checkout</h1>
-	<p class="price" data-price="170.99">Ksh170.99 per litre</p>
-	<p class="description">Quantity:</p>
-	<input type="text" class="quantity" value="1">
-		<p class="total">Total: <span id="total">Ksh170.99</span></p>
-		<button class="buy_btn">Purchase</button>
-	</div>
-
-
-<!----- RESPONSE ----->
-
-<section class="RESPONSE">
-	<h1>Get Fuel From Various Petrol Stations<br>In The Country</h1> 
-	<a class="hero-btn">CONTACT US</a>
-</section>
-</body>
-<script src="index.js" charset="utf-8"></script>
+        <h4>Amount In Litres: <span id="litre-count">Litres Ordered</span></h4>
+        <form id="fuel-form">
+          <input type="text" placeholder="Enter Amount" id="amount" name="amount" />
+          <input type="submit" value="Buy" />
+        </form>
+        <button id="reset-btn">Reset Amount</button>
+      </div>
+      
+        <h4>Add New Station</h4>
+        <form id="Station-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="image-url">Image URL</label>
+            <input type="text" id="image-url" name="image-url" />
+          </div>
+          <input type="submit" value="Add Station" />
+        </form> 
+        <section class="FUEL">
+            <h1>FUEL OFFERED</h1>
+            <p>We offer the fuel that is in high demand and that is widely used in the country.</p>
+        
+            <div class="row">
+                <div class="FUEL-col">
+                    <h3>Unleaded Premium Super</h3>
+                    <p>Super petrol also known as Premium Motor Gasoline or Premium Motor Spirit(PMS) or petrol is used as fuel in internal combustion engines.</p> 
+                </div>
+                <div class="FUEL-col">
+                    <h3>Low Sulphur Diesel</h3>
+                    <p>Diesel(Automotive Gas Oil-AGO) is fuel used in any diesel engine.</p>
+                </div>
+                <div class="FUEL-col">
+                    <h3>Kerosene</h3>
+                    <p>Illuminating Kerosene(paraffin) is a combustible liquid commonly used as heating fuel and domestically for cooking and lighting.</p>
+                </div>
+                <div class="FUEL-col">
+                    <h3>Industrial Diesel Oil</h3>
+                    <p>Industrial Diesel oil (IDO) is a blend of diesel and heavy fuel oil and is mainly used for heating, generating power and water/steam boilers in small industrial and hospitality and applications.</p>
+                </div>
+        </section>
+    </div>
+    <script src="Index.js"></script>
+  </body>
 </html>
